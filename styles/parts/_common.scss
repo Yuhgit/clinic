@@ -1,0 +1,132 @@
+@use "../globals" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", serif;
+  color: $cBlack;
+  background: $cWhite;
+  @extend .font-md;
+}
+p {
+  line-height: 150%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-md {
+  margin-bottom: 24px !important;
+
+  @include mq(lg) {
+    margin-bottom: 40px !important;
+  }
+}
+
+.mb-lg {
+  margin-bottom: 48px !important;
+
+  @include mq(lg) {
+    margin-bottom: 80px !important;
+  }
+}
+
+.mb-sec {
+  margin-bottom: 42px !important;
+
+  @include mq(lg) {
+    margin-bottom: 100px !important;
+  }
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-md {
+  padding-bottom: 32px !important;
+
+  @include mq(lg) {
+    padding-bottom: 40px !important;
+  }
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+
+  @include mq(lg) {
+    padding-bottom: 150px !important;
+  }
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+#main-content {
+  position: relative;
+  z-index: 0;
+}
+
+// font
+.font-sm {
+  font-size: 10px;
+
+  @include mq(lg) {
+    font-size: 14px;
+  }
+}
+.font-md {
+  font-size: 14px;
+
+  @include mq(lg) {
+    font-size: 16px;
+  }
+}
+.font-lr {
+  font-size: 17px;
+
+  @include mq(lg) {
+    font-size: 23px;
+  }
+}
+.font-lg {
+  font-size: 20px;
+
+  @include mq(lg) {
+    font-size: 32px;
+  }
+}
+.font-title {
+  font-size: 36px;
+
+  @include mq(lg) {
+    font-size: 48px;
+  }
+}
+
+.en-title {
+  font-size: 36px;
+  @include mq(lg) {
+    font-size: 80px;
+  }
+  color: $cGold;
+}
+
+.ja-title {
+  font-size: 18px;
+  @include mq(lg) {
+    font-size: 22px;
+  }
+  color: $cGold;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ginza Central Clinic</title>
+    <meta
+      name="description"
+      content="銀座中央クリニックは、東京都中央区銀座にある美容クリニックです。"
+    />
+    <link rel="icon" href="images/favicon.png" />
+
+    <!---font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;1,100&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---css-->
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!--scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img
+              src="images/header-logo.webp"
+              width="131"
+              height="70"
+              alt="銀座中央クリニック"
+            />
+          </a>
+        </h1>
+        <ul class="nav-menu">
+          <li><a href="about.html">GinzaCentralClinicについて</a></li>
+          <li><a href="menu.html">施術メニュー</a></li>
+          <li class="reserve-menu">
+            <a href="" class="font-sm"> LINE予約 </a>
+            <a href="" class="font-sm"> WEB予約 </a>
+            <a href="" class="font-sm"> 電話予約 </a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="about-mv mb-sec">
+        <div class="about-mv-img">
+          <img
+            src="images/about-mv.webp"
+            width="1500"
+            height="600"
+            alt="AboutページMV"
+          />
+        </div>
+      </div>
+      <section class="about mb-sec content-width">
+        <div class="section-title mb-md">
+          <h2 class="en-title">About us</h2>
+          <h3 class="ja-title">美しさへの想い</h3>
+        </div>
+        <p class="about__subtitle font-lg mb-md">
+          美容と健康を通じて、<br />あなただけの輝きをサポート
+        </p>
+        <div class="about__content">
+          <div class="about__img">
+            <picture>
+              <source
+                media="(max-width: 599px)"
+                srcset="images/about-sp.webp"
+              />
+              <img
+                src="images/about.webp"
+                width="550"
+                height="550"
+                alt="医師の画像"
+              />
+            </picture>
+          </div>
+          <div class="about__txt">
+            <p class="mb-md">
+              私たちのクリニックでは、美容点滴を中心に、身体の内側から美しさを引き出すお手伝いをしています。点滴は一人ひとりのライフスタイルやお悩みに合わせてカスタマイズ。美肌ケアや疲労回復、免疫力アップなど、さまざまな目的に対応しています。
+            </p>
+            <p class="mb-md font-lg">無理なく、心地よく、美しく</p>
+            <p>
+              最新の医療技術とリラックスできる空間をご提供。施術を受ける時間そのものが、あなたにとっての癒しのひとときになるように心がけています。「無理なく、心地よく、美しく」をモットーに、あなたのキレイを一緒に育てていきます。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="doctor mb-sec">
+        <div class="section-title mb-md">
+          <h2 class="en-title">Doctor</h2>
+          <h3 class="ja-title">担当医師のご紹介</h3>
+        </div>
+        <div class="doctor__content content-width">
+          <div class="doctor__txt">
+            <div class="doctor__name mb-md">
+              <p class="mb-sm">GinzaCentral Clinic 院長</p>
+              <p class="font-lg">山田 隼人</p>
+            </div>
+            <div class="doctor__career mb-md">
+              <p class="mb-sm">略歴</p>
+              <p>旭川医科大学 - 卒業</p>
+              <p>大手大学病院 - 勤務</p>
+              <p>Ginza Central clinic - 就任</p>
+            </div>
+            <div class="doctor__certificate">
+              <p class="mb-sm">資格</p>
+              <p>日本内科学会専門医</p>
+            </div>
+          </div>
+          <div class="doctor__img">
+            <picture>
+              <source
+                media="(max-width: 599px)"
+                srcset="images/doctor-sp.webp"
+              />
+              <img
+                src="images/doctor.webp"
+                width="550"
+                height="550"
+                alt="担当医師のご紹介"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <div class="menu-btn mb-lg">
+        <a href=""
+          >施術メニューはこちらから
+          <span class="arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="22"
+              viewBox="0 0 55 22"
+              fill="none"
+            >
+              <path
+                d="M34.7273 21L54 1H0.999998"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="reserve-banner mb-sec content-width">
+        <div class="banner">
+          <picture>
+            <source media="(max-width: 599px)" srcset="images/banner-sp.webp" />
+            <img
+              src="images/banner.webp"
+              width="900"
+              height="200"
+              alt="ご予約バナー"
+            />
+          </picture>
+          <div class="reserve-menu">
+            <a href="" class="font-sm">LINE予約</a>
+            <a href="" class="font-sm">WEB予約</a>
+            <a href="" class="font-sm">電話予約</a>
+          </div>
+        </div>
+      </div>
+      <button
+        id="back-to-top"
+        class="back-to-top font-sm"
+        aria-label="ページトップに戻る"
+      >
+        page top
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="footer__container pb-md">
+        <div class="footer__nav mb-sec">
+          <ul>
+            <li><a href="">ホーム</a></li>
+            <li><a href="">クリニック情報</a></li>
+            <li><a href="">施術メニュー</a></li>
+            <li><a href="">公式インスタグラム</a></li>
+          </ul>
+        </div>
+        <div class="footer__info content-width">
+          <span class="copyright">
+            &copy; 2024 GINZA CHUOU CLINIC ALL Rights Reseved.
+          </span>
+          <div class="footer__logo">
+            <img
+              src="images/footer-logo.webp"
+              width="130"
+              height="70"
+              alt="フッターロゴ"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

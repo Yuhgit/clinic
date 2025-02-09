@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ginza Central Clinic</title>
+    <meta
+      name="description"
+      content="銀座中央クリニックは、東京都中央区銀座にある美容クリニックです。"
+    />
+    <link rel="icon" href="images/favicon.png" />
+
+    <!---font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;1,100&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---css-->
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!--scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img
+              src="images/header-logo.webp"
+              width="131"
+              height="70"
+              alt="銀座中央クリニック"
+            />
+          </a>
+        </h1>
+        <ul class="nav-menu">
+          <li><a href="about.html">GinzaCentralClinicについて</a></li>
+          <li><a href="menu.html">施術メニュー</a></li>
+          <li class="reserve-menu">
+            <a href="" class="font-sm"> LINE予約 </a>
+            <a href="" class="font-sm"> WEB予約 </a>
+            <a href="" class="font-sm"> 電話予約 </a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mv mb-sec">
+        <div class="slider">
+          <div class="slider-wrapper">
+            <img
+              src="images/mv-banner1.webp"
+              width="1500"
+              height="600"
+              alt="MVバナー1"
+            />
+            <img
+              src="images/mv-banner2.webp"
+              width="1500"
+              height="600"
+              alt="MVバナー2"
+            />
+            <img
+              src="images/mv-banner3.webp"
+              width="1500"
+              height="600"
+              alt="MVバナー3"
+            />
+            <img
+              src="images/mv-banner4.webp"
+              width="1500"
+              height="600"
+              alt="MVバナー4"
+            />
+          </div>
+          <div class="slider-arrows">
+            <button class="prev-arrow" aria-label="前へ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="55"
+                height="22"
+                viewBox="0 0 55 22"
+                fill="none"
+              >
+                <path
+                  d="M20.2727 1L1 21H54"
+                  stroke="#C9B05D"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="next-arrow" aria-label="次へ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="55"
+                height="22"
+                viewBox="0 0 55 22"
+                fill="none"
+              >
+                <path
+                  d="M34.7273 21L54 1H0.999998"
+                  stroke="#C9B05D"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="sp-slider">
+          <div class="sp-slider-wrapper">
+            <img
+              src="images/mv-banner-sp1.webp"
+              width="440"
+              height="528"
+              alt="MVバナー1"
+            />
+            <img
+              src="images/mv-banner-sp2.webp"
+              width="440"
+              height="528"
+              alt="MVバナー2"
+            />
+            <img
+              src="images/mv-banner-sp3.webp"
+              width="440"
+              height="528"
+              alt="MVバナー3"
+            />
+            <img
+              src="images/mv-banner-sp4.webp"
+              width="440"
+              height="528"
+              alt="MVバナー4"
+            />
+          </div>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <section class="menu mb-sec content-width">
+        <div class="section-title mb-md">
+          <h2 class="en-title">Menu</h2>
+          <h3 class="ja-title">GinzaCentralClinic施術一覧</h3>
+        </div>
+        <div class="menu__content">
+          <table aria-label="施術メニュー" class="mb-sec">
+            <thead>
+              <tr>
+                <th>オーダーメイド再生医療</th>
+                <th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>iPSバンク5年~15年</td>
+                <td>ask</td>
+              </tr>
+              <tr>
+                <td>MSC間葉系幹細胞治療</td>
+                <td>ask</td>
+              </tr>
+            </tbody>
+          </table>
+          <table aria-label="施術メニュー" class="mb-sec">
+            <thead>
+              <tr>
+                <th>再生医療エステ</th>
+                <th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Air Pro Jet/フェイシャル</td>
+                <td>￥22,000</td>
+              </tr>
+              <tr>
+                <td>Air Pro Jet/首、デコルテ</td>
+                <td>￥22,000</td>
+              </tr>
+              <tr>
+                <td>Air Pro Jet/AGA治療</td>
+                <td>￥22,000</td>
+              </tr>
+              <tr>
+                <td>AAir Pro Jet/ED治療</td>
+                <td>￥22,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <table aria-label="施術メニュー" class="mb-sm">
+            <thead>
+              <tr>
+                <th>美容点滴</th>
+                <th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>エクソソーム点滴 1ml</td>
+                <td>￥45,000</td>
+              </tr>
+              <tr>
+                <td>エクソソーム点滴 2ml</td>
+                <td>￥85,000</td>
+              </tr>
+              <tr>
+                <td>エクソソーム点滴 3ml</td>
+                <td>￥112,000</td>
+              </tr>
+              <tr>
+                <td>NMN点滴 150mg</td>
+                <td>￥23,000</td>
+              </tr>
+              <tr>
+                <td>NMN点滴 300mg</td>
+                <td>￥35,000</td>
+              </tr>
+              <tr>
+                <td>高濃度ビタミンC 20g</td>
+                <td>￥12,000</td>
+              </tr>
+              <tr>
+                <td>高濃度ビタミンC 50g</td>
+                <td>￥24,000</td>
+              </tr>
+              <tr>
+                <td>疲労回復点滴</td>
+                <td>￥6,600</td>
+              </tr>
+              <tr>
+                <td>脂肪燃焼点滴</td>
+                <td>￥9,600</td>
+              </tr>
+              <tr>
+                <td>白玉点滴</td>
+                <td>￥10,700</td>
+              </tr>
+              <tr>
+                <td>グルタチオン＋高濃度ビタミンC点滴</td>
+                <td>￥12,9600</td>
+              </tr>
+              <tr>
+                <td>二日酔い点滴</td>
+                <td>￥3,500</td>
+              </tr>
+              <tr>
+                <td>プラセンタ点滴/2ml</td>
+                <td>￥1,800</td>
+              </tr>
+              <tr>
+                <td>ニキビ点滴</td>
+                <td>￥3,500</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mb-lg">※表示価格は全て税込です。</p>
+          <div class="attention">
+            <p class="font-lr mb-sm">※点滴・注射に関して</p>
+            <p>
+              副作用の心配はありませんが、ごく稀にアレルギー作用が出る場合がございます。
+            </p>
+            <p>
+              初診の方は問診を記入し当院がお渡しする同意書へご記入をお願いします。
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="reserve-banner mb-sec content-width">
+        <div class="banner">
+          <picture>
+            <source media="(max-width: 599px)" srcset="images/banner-sp.webp" />
+            <img
+              src="images/banner.webp"
+              width="900"
+              height="200"
+              alt="ご予約バナー"
+            />
+          </picture>
+          <div class="reserve-menu">
+            <a href="" class="font-sm">LINE予約</a>
+            <a href="" class="font-sm">WEB予約</a>
+            <a href="" class="font-sm">電話予約</a>
+          </div>
+        </div>
+      </div>
+      <button
+        id="back-to-top"
+        class="back-to-top font-sm"
+        aria-label="ページトップに戻る"
+      >
+        page top
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="footer__container pb-md">
+        <div class="footer__nav mb-sec">
+          <ul>
+            <li><a href="">ホーム</a></li>
+            <li><a href="">クリニック情報</a></li>
+            <li><a href="">施術メニュー</a></li>
+            <li><a href="">公式インスタグラム</a></li>
+          </ul>
+        </div>
+        <div class="footer__info content-width">
+          <span class="copyright">
+            &copy; 2024 GINZA CHUOU CLINIC ALL Rights Reseved.
+          </span>
+          <div class="footer__logo">
+            <img
+              src="images/footer-logo.webp"
+              width="130"
+              height="70"
+              alt="フッターロゴ"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

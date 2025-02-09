@@ -1,0 +1,140 @@
+@use "../globals/index" as *;
+@use "../parts/common" as *;
+
+.about-mv {
+  .about-mv-img {
+    width: 90%;
+    margin: 0 auto;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 599px) {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}
+
+.about {
+  text-align: center;
+  .about__subtitle {
+    color: $cGold;
+    position: relative;
+    & br {
+      display: none;
+      @media (max-width: 700px) {
+        display: block;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16%;
+      height: 1px;
+      background: $cGold;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16%;
+      height: 1px;
+      background: $cGold;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+  .about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 599px) {
+      flex-direction: column;
+    }
+    .about__img {
+      width: 45%;
+      @media (max-width: 599px) {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+    .about__txt {
+      width: 45%;
+      @media (max-width: 599px) {
+        width: 100%;
+      }
+      & p {
+        line-height: 2;
+      }
+      .font-lg {
+        color: $cGold;
+      }
+    }
+  }
+}
+
+.doctor {
+  background-image: url(../images/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  @media (max-width: 599px) {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+  .doctor__content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 599px) {
+      flex-direction: column-reverse;
+    }
+    .doctor__txt {
+      padding: 8px 0 0 10%;
+      width: 45%;
+      @media (max-width: 599px) {
+        width: 100%;
+        text-align: center;
+        .doctor__career,
+        .doctor__certificate {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          position: relative;
+          left: 20%;
+        }
+      }
+      .font-lg {
+        color: $cGold;
+        @media (max-width: 599px) {
+          font-size: 26px;
+        }
+      }
+      & p {
+        line-height: 2;
+        @media (max-width: 599px) {
+          margin-bottom: 8px !important;
+          line-height: 1.3;
+        }
+      }
+    }
+    .doctor__img {
+      width: 45%;
+      @media (max-width: 599px) {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.menu-btn {
+  text-align: center;
+}

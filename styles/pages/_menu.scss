@@ -1,0 +1,47 @@
+@use "../globals/index" as *;
+@use "../parts/common" as *;
+
+.menu {
+  text-align: center;
+  .menu__content {
+    & table {
+      width: 100%;
+      border-collapse: collapse;
+      & th {
+        background: $cGradation;
+        color: $cWhite;
+        padding: 8px;
+        &:first-of-type {
+          width: 60%;
+          border-right: 1px solid $cWhite;
+        }
+        &:last-of-type {
+          width: 40%;
+        }
+      }
+      & td {
+        border: 1px solid $cGold;
+        padding: 8px;
+      }
+    }
+    & p {
+      text-align: left;
+    }
+    .attention {
+      border: 1px solid $cGold;
+      padding: 40px 0;
+      width: 90%;
+      margin: 0 auto;
+      @media (max-width: 599px) {
+        padding: 20px 10px;
+      }
+      .font-lr {
+        color: $cGold;
+      }
+      & p {
+        text-align: center;
+        line-height: 2;
+      }
+    }
+  }
+}
