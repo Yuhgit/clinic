@@ -379,12 +379,14 @@ img {
     right: 0;
     background-color: #c9b05d;
     width: 100%;
-    height: 40vh;
     text-align: center;
     padding-top: 60px;
     gap: 40px;
     padding-left: 0;
     transition: opacity 0.5s;
+  }
+  .nav-menu .reserve-menu {
+    padding-bottom: 60px;
   }
   .nav-menu.active {
     opacity: 1;
@@ -606,6 +608,19 @@ img {
 .medicalDay .section-title {
   text-align: center;
 }
+.medicalDay .medicalDay__calender {
+  text-align: center;
+}
+.medicalDay .medicalDay__calender iframe {
+  width: 100% !important;
+  margin: 0 auto;
+}
+@media (max-width: 599px) {
+  .medicalDay .medicalDay__calender iframe {
+    height: 400px !important;
+  }
+}
+
 /*ページトップに戻る*/
 .back-to-top {
   position: fixed;
@@ -626,6 +641,12 @@ img {
   transition: opacity 0.3s, visibility 0.3s;
   padding-top: 20px;
 }
+@media (max-width: 599px) {
+  .back-to-top {
+    width: 80px;
+    height: 80px;
+  }
+}
 .back-to-top:hover {
   background-color: #b69a3d;
 }
@@ -638,6 +659,11 @@ img {
   height: 30px;
   position: absolute;
   bottom: 40px;
+}
+@media (max-width: 599px) {
+  .back-to-top::before {
+    bottom: 28px;
+  }
 }
 .back-to-top.visible {
   opacity: 1;
@@ -759,6 +785,14 @@ img {
   display: none;
 }
 
+.about-mv {
+  margin-top: 60px;
+}
+@media (max-width: 900px) {
+  .about-mv {
+    margin-top: 100px;
+  }
+}
 .about-mv .about-mv-img {
   width: 90%;
   margin: 0 auto;
@@ -875,15 +909,20 @@ img {
 @media (max-width: 599px) {
   .doctor .doctor__content .doctor__txt {
     width: 100%;
+    padding: 0;
+  }
+  .doctor .doctor__content .doctor__txt .doctor__name {
     text-align: center;
   }
-  .doctor .doctor__content .doctor__txt .doctor__career,
-  .doctor .doctor__content .doctor__txt .doctor__certificate {
+  .doctor .doctor__content .doctor__txt .doctor__introduce {
+    text-align: center;
+  }
+  .doctor .doctor__content .doctor__txt .doctor__introduce .doctor__career,
+  .doctor .doctor__content .doctor__txt .doctor__introduce .doctor__certificate {
     display: flex;
     flex-direction: column;
     text-align: left;
-    position: relative;
-    left: 20%;
+    padding-left: 30%;
   }
 }
 .doctor .doctor__content .doctor__txt .font-lg {
