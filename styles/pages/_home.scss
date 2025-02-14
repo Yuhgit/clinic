@@ -404,6 +404,9 @@ img {
       width: 60%;
       & iframe {
         width: 100%;
+        @media (max-width: 599px) {
+          height: 350px;
+        }
       }
       @media (max-width: 960px) {
         width: 100%;

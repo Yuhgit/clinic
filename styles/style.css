@@ -560,6 +560,11 @@ img {
 .access .access__content .access__map iframe {
   width: 100%;
 }
+@media (max-width: 599px) {
+  .access .access__content .access__map iframe {
+    height: 350px;
+  }
+}
 @media (max-width: 960px) {
   .access .access__content .access__map {
     width: 100%;
